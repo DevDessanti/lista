@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <h1>Bem vindos!</h1>
-    <b-button variant="danger">Logar</b-button>
+    <NavBar/>
+    <FooterBar/>
+    <router-view />
   </div>
 </template>
 
 <script>
 
+import NavBar from './components/navbarAll.vue'
+import FooterBar from './components/footerAll.vue'
+
 export default {
   name: 'App',
-  components: {
-  }
+  components: {NavBar,FooterBar}
 }
 </script>
 
